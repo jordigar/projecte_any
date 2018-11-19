@@ -1,0 +1,7 @@
+<launch>
+  <!-- <param name="/masteruvic/year" value= "2000"  /> -->
+  <rosparam file="$(find projecte_any)/launch/any.yaml" command="load"/>
+  <node name="rviz" pkg="rviz" type="rviz" />
+  <include file="$(find usb_cam)/launch/usb_cam-test.launch">
+  </include>
+</launch>
